@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css 불러오기 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- # 안에 형식으로도 css작성이 가능 -->
+    <style>
+        h1 {
+            color: blue;
+        }
+
+        div {
+            background-color: yellowgreen;
+        }
+
+        div>h1 {
+            color: red
+        }
+
+        div>.sub_2 {
+            color: aqua;
+        }
+
+        div>.sub_2_2 {
+            color: yellow;
+        }
+
+        #sub2-2 {
+            background-color: beige;
+        }
+    </style>
+
+    <!-- 
+    태그(태그 이름으로 검색)  : 이름 -> 동명이인이 가능
+    class(.으로 검색) : 별명(여러명이 같은 별명을 가질 수 있음, 한명이 여러개 가질 수 있다.)
+    id(#으로 검색) : 주민등록번호(절대 한 html내에서 같은 id를 쓸 수 없다.)
+    -->
+
+
+    <!-- # 제목 태그로 이루어진 엘리먼트 -->
+    <h1>뉴스 제목1</h1>
+    <!-- 내용관련 엘리먼트 -->
+    <p>기사 내용입니다.1</p>
+    <!-- 링크 이동 엘리먼트 -->
+    <a href="https://www.naver.com">네이버로 이동</a>
+
+    <!-- div가 h1, p태그 감싸고 있음 -> 부모 자식 관계 -->
+    <!-- h1 형, p 동생 -->
+    <div>
+        <h1 id="sub2" class="sub_2">뉴스 제목2</h1>
+        <p>기사 내용입니다.2</p>
+
+        <h1 id="sub2-2" class="sub_2 sub_2_2">뉴스 제목 2-2</h1>
+        <p>기사 내용입니다.2-2</p>
+    </div>
+</body>
+
+</html>
